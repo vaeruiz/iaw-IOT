@@ -30,15 +30,17 @@ Para utilizar el contenedor del tipo publish ejecutamos el siguiente comando:
 
 >sudo docker run --init -it --rm efrecon/mqtt-client pub -h dirección_IP -p 1883 -t "iescelia/aula22/co2" -m 30
 
-Donde dirección_IP es la dirección IP pública del host.
+Donde dirección_IP es la dirección IP pública o DNS del host y "iescelia/aula22/co2" el topic al que queremos enviar información.
 
 Para utilizar el contenedor del tipo subscribe ejecutamos el siguiente comando:
 
 >sudo docker run --init -it --rm efrecon/mqtt-client sub -h direccion_IP -t "iescelia/#"
 
+Al igual que antes, direccion_IP es la IP pública o dns del host y "iescelia/#" el topic que queremos escuchar.
+
 ## Monitorizando datos con Grafana.
 
-Tenemos un contenedor que es un GBD encargado de almacenar los datos que, en este caso, los publish envían. Existe un complemento con el que podemos reflejar estos datos en gráficas, de eso se encarga Grafana, un servicio web que permite tener un panel de control con los datos que se han registrado en nuestra base de datos, de esta forma podemos mostrar los datos recogidos de una forma más gráfica.
+En nuestra infraestructura tenemos un contenedor GBD encargado de almacenar los datos enviados por los publish. Existe un complemento con el que podemos reflejar estos datos en gráficas, de eso se encarga Grafana, un servicio web que permite tener un panel de control con los datos que se han registrado en nuestra base de datos, de esta forma podemos mostrar los datos recogidos de una forma más gráfica.
 
 Para entrar a Grafana basta con que pongamos nuestra dirección IP/DNS de nuestra máquina y el puerto 3000 (si es el que hemos abierto para el servicio). Por defecto, la contraseña y el usuario son admin, al entrar por primera vez se nos pedirá que cambiemos la contraseña, cuando la actualicemos, estaremos dentro del panel de control.
 
