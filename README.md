@@ -16,7 +16,7 @@ Cuando se hayan instalado las herramientas correspondientes pasaremos a montar l
 
 Los archivos necesarios y la estructura de carpetas necesarias para levantar los contenedores correspondientes se encontrarán en el [repositorio de github](https://github.com/vaeruiz/iaw-IOT).
 
-## Escuchando los mensajes y enviando datos
+## Mostrando y enviando datos
 
 Dado que no disponemos de los sensores correspondientes que propone la práctica, podemos emular ese envío de información a través de contenedores docker, necesitamos dos contendores
 
