@@ -1,6 +1,6 @@
 # Internet Of Things ~ Pedro Ángel Castiñeira Ruiz
 
-Proyecto para clase de la práctica IOT.
+Proyecto para la clase de Implantación de aplicaciones web sobre la práctica InternetOfThings.
 
 ## Preparando la máquina
 
