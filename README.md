@@ -4,7 +4,7 @@ Proyecto para la clase de Implantación de aplicaciones web sobre la práctica I
 
 ## Preparando la máquina
 
-Necesitaremos una máquina con al menos 8GB de memoria con los puertos 8888, 8086, 3000, y 1883 abiertos.
+Necesitaremos una máquina con mínimo 4GB de memoria con los puertos 8888, 8086, 3000, y 1883 abiertos.
 
 ## Montando la infraestructura
 
